@@ -2,8 +2,6 @@
 @import url("http://fonts.cdnfonts.com/css/euclid-circular-a");
 
 body {
-  max-width: 1920px;
-  max-height: 1080px;
   background: #28293e;
   font-family: "Euclid Circular A", sans-serif;
 }
@@ -112,6 +110,19 @@ body {
   margin-right: 183px;
 }
 
+.main-img {
+  position: absolute;
+  width: 800px;
+  height: 800x;
+  left: 783px;
+  top: 150px;
+}
+
+img {
+  object-fit: cover; 
+  width: 100%;
+}
+
 .main-email {
   display: flex;
   flex-direction: row;
@@ -149,15 +160,103 @@ body {
   font-size: 20;
 }
 
-.main-img {
-  position: absolute;
-  width: 800px;
-  height: 800x;
-  left: 783px;
-  top: 150px;
-}
 
-.img-responsive {
-  size: 100%;
-}
 /* MAIN */
+
+@media screen and (max-width: 320px) {
+
+  .navigation {
+    width: 250px;
+    height: 40px;
+
+    margin-left: 20px;
+    margin-top: 20px;
+
+    font-size: 10px;
+  }
+
+  .nav-row{
+    margin-left: 50px;
+    column-gap: 20px;
+  }
+
+  .btn{
+    padding: 2px;
+    width: 40px;
+    height: 20px;
+  
+    background-color: #ff3366;
+  
+    border-radius: 2px;
+    margin-left:30px;
+  }
+
+  #flash {
+    height: 20px;
+    object-fit: cover; 
+  }
+
+  .main-content {
+    margin: 20px 20px;
+    width: 300px;
+  }
+  .main-content-text {
+
+    color: white;
+  }
+  
+  .main-text_1 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .main-text_2 {
+    font-weight: 400;
+    font-size: 10px;
+    color: #d5d5d6;
+    margin-right: 20px;
+  }
+
+  
+  .main-img {
+    width: 200px;
+    height: 100px;
+  }
+  .img-responsive {
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .main-email{
+    width: 250px;
+    height: 30px;
+  }
+
+  .input-email {
+    padding: 15.5px 16px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #d5d5d6;
+
+    border: 2px solid white;
+    border-radius: 7px;
+
+    width: 250px;
+    height: 20px;
+    text-align: right;
+    background: url(./../img/Message.png) no-repeat 8px 14px;
+  }
+
+  .main-sendbtn {
+    border: 2px solid #ff3366;
+    background-color: #ff3366;
+    border-radius: 7px;
+
+    width: 40px;
+    height: 20px;
+    padding: 5px 5px;
+  }
+  .btn-send {
+    color: white;
+    font-size: 10px;
+  }
+}

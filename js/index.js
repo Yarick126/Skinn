@@ -1,6 +1,6 @@
 function main (){
-
-  function toCamelCase(str){
+  function toCamelCase(str)
+  {
     let symbl = '-_';
     for(var i = 0;i<str.lenght;i++){
       for(var j =0;j<symbl.lenght;j++){
@@ -10,7 +10,6 @@ function main (){
         }
       }
     }
-    
     return str;
   }
   
